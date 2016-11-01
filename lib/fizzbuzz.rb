@@ -4,17 +4,16 @@ class Fixnum
     self % n == 0
   end
 
-end
-
-
-def fizzbuzz(number)
-  if number.is_divisable_by?(3) && number.is_divisable_by?(5)
-    "fizzbuzz"
-  elsif number.is_divisable_by?(3)
-    'fizz'
-  elsif number.is_divisable_by?(5)
-    'buzz'
-  else
-    number
+  def fizzbuzz
+    if self.is_divisable_by?(3) && self.is_divisable_by?(5)
+      "fizzbuzz"
+    elsif self.is_divisable_by?(3)
+      'fizz'
+    elsif self.is_divisable_by?(5)
+      'buzz'
+    else
+      self
+    end
   end
+
 end
